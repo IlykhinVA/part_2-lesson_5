@@ -1,10 +1,9 @@
 def get_matrix(n, m, value):
     matrix = []
     for i in range(n):
-        stolbec = []
+        matrix.insert(i,[])
         for j in range(m):
-            stolbec.append(value)
-        matrix.insert(i, stolbec)
+           matrix[i].insert(j,value)
     return (matrix)
 
 
